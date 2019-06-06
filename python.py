@@ -24,12 +24,11 @@ elif choice==3:
 elif choice==2:
 	data1=input("which song on youtube:")
 	webbrowser.open_new_tab('https://www.youtube.com/results?search_query='+data1)
-elif choice==4:
-	driver=webdriver.chrome('/home/adhoc/Desktop/chromedriver')
-	driver.get("https://web.whatsapp.com/")
-	wait=WebDriverWait(driver,600)
-	target='Priyanshu'
-	string='lodu'
+#elif choice==4:
+	#driver=webdriver.chrome('/home/adhoc/Desktop/chromedriver')
+	#driver.get("https://web.whatsapp.com/")
+	#wait=WebDriverWait(driver,600)
+
 
 else :
 	print('cant help you')
