@@ -1,0 +1,90 @@
+linux
+
+#lsblk - disk connected to our system
+
+-(add volume in AWS)
+
+STEP 1---Have to make partition (AWS volume)
+# fdisk -l = view hdd in system
+#fdisk -l /dev/xvdf = select your hdd
+#fdisk  /dev/xvdf = enter into hdd
+and the #print = to see partition (can use only 'p'as a command)
+#new or #n = create a partition
+
+===default choice is partition and one partition( system will choice everything by default)
+
+#+300M = partition of 300 mb is created 
+--> never ever delete or format extended partition
+#q= quit
+#wq= save 
+
+step 2 --- format a partition
+
+format types - NTFS(windows), HFS(mac), XFS(redut)
+             -FAT, VFAT == can be useful in every OS
+
+#mkfs.xfs /dev/xvdf1 = foematted a 'xvdf1' partition
+
+
+STEP 3 ----- mount 
+
+  mount --/dev/xvdf1 --->connect to os 
+os ----- /dev/xvdf1   --any loaction  --folder /tmp/newvolume 
+  /dev/xvdf1  --/tmp/newvolume  --link  --icon in desktop
+---create a folder and map /link partition
+
+_------> (link hdd with a folder in system)<------
+
+#mkdir /mnt/mypart = create a folder
+#mount /dev/xvdf1 /mnt/mypart  = mounted
+# df== to see all the disk
+# df -h	=human readable
+#df -hT = to check the format type
+# vim /etc/fstab /dev/xvdf1 /mnt/mypart = fix a 
+
+
+
+
+
+SERVER
+--service provider  
+client = service reciever --/request 
+many client = internet/network ---(server)
+web page --serve -------------------------web server 
+
+apache (free, open source )=foundation 
+Apache httpd ==all on OS
+apache apache2 = only ubuntu type OS 
+WAMP, XAMP, LAMP 
+
+MGINX
+
+IIS==internet info service 
+tomcat=powerful streaming server (product of apache) -java oriented
+ 
+
+
+
+------to deploy any server-----
+STEP 1 = install software related to that server 
+# sudo yum install httpd
+#rpm -q httpd
+
+STEP 2 : configure that server (do required changes)
+#rpm -qc httpd
+
+STEP 3: 
+#systemctl start httpd
+#systemctl status httpd
+
+/var/www/html = documentry root for apache
+
+
+# echo "<h1> Hello World </h1>" >a.html
+
+client -- internet ---------(firewall)--aws linux server 
+
+
+
+
+
