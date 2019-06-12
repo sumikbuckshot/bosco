@@ -1,0 +1,50 @@
+slashreboot.blogspot.in 
+
+web browser -- search engine
+web scrapping -- beautifulsoup4
+google-search 
+# sudo pip3 install google
+# pip3 show google
+
+
+
+------------file/directory Handling---------------
+directory ==
+ i) create, delete , rename , store, permission, cp, cut , blank
+
+#import os
+---------------------------------------------------------------------------------------------------------------------------------------
+#import time 
+x=[]
+>>> for i in dir(time):
+...     if 'time'in i:
+...             x.append(i)
+...
+>>> x
+['asctime', 'clock_gettime', 'clock_settime', 'ctime', 'gmtime', 'localtime', 'mktime', 'process_time', 'strftime', 'strptime', 'struct_time', 'time', 'timezone']
+>>>
+
+            -----------------or----------------
+
+ y= [i for i in dir(time) if 'time' in i ]
+
+
+---------------------------------------------------------------------------------------------------------------------------------------
+#import os
+[j for j in dir(os) if 'dir' in j]
+os.mkdir('heloooooooo')
+os.listdir('/home/ec2-user')
+
+>>> [j for j in dir(os) if 'mod' in j]
+['chmod', 'fchmod']
+----------------------------------------------------------------------------------------------------------------------------------------
+
+permission
+read 
+create 
+remove 
+append 
+write 
+delete 
+
+------kuchbhi.py-----
