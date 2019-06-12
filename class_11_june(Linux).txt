@@ -1,0 +1,38 @@
+logical volume management (LVM)
+
+step 1 = combine physical volumes 
+command= pvcreate /dev/xvdg /dev/xvdh
+
+step 2 = create a volume group
+command = vgcreate *new hdd name* /dev/xvdg /dev/xvdh
+
+command for display = vgdisplay myvirhdd
+
+step 3 = partion of virtual hdd ( creation of logical volume )
+command= lvcreate --name part1 --size 400MB myvirhdd
+command to display = lvdisplay
+
+virtual hdd always stores in /dev/___ 
+so , ---> /dev/myvirhdd/Part1
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+size of a sector(physical extent) in virtual hdd=4 MB
+----------------------------------------------------------------------------------------------------------------------------------
+commands to mount __>
+ 1. fdisk -l 
+ 2. mkfs.xfx /dev/mapper/myvirhdd-Part1
+ 3. mkdir /mnt/google
+ 4. mount /dev/mapper/myvirhdd-Part1  /mnt/google 
+
+
+---->
+useradd adhoc
+passwd
+vim  /etc/ssh/sshd_config or grep -in password /etc/ssh/sshd_config
+
+
+ssh adhoc@IP
+
+
+troubleshootforopensource.blogspot.com
