@@ -1,0 +1,31 @@
+Data science 
+-bigdata(stores and processes altogethor)
+-machine learning-algo-mathematical
+
+
+MATLAB
+-numpy
+-pandas
+-seaboom
+-matplotlib 
+
+Python
+-tuple
+-list
+-string
+-for
+
+numerical python (numpy)    ////  --->tensorflow
+-stores or process data in terms of array
+
+---google colab ----
+
+-transpose
+-reshape
+-range
+-x1
+
+
+task no 1 == 16X32 
+task no 2 == generate 3,2 and 2,5 2d aray with random element and save this data into two separate files
+
