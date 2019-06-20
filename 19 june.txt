@@ -1,0 +1,9 @@
+data visualization - matplotlib.org
+numpy, pandas-data processing
+csv
+
+Machine Learning
+-supervised
+-unsuprvised
+-reinforcement 
+

@@ -29,3 +29,10 @@ numerical python (numpy)    ////  --->tensorflow
 task no 1 == 16X32 
 task no 2 == generate 3,2 and 2,5 2d aray with random element and save this data into two separate files
 
+
+
+-mpld3
+-matplotlib
+-seaborn
+-gnuplot
+-dash
